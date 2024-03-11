@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered Products</title>
+    <style>
+        body {
+            background-color: #4b2c50; 
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            color: #95a5a7;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #95a5a7; 
+        }
+
+        .product {
+            border-top: 1px solid #95a5a7;
+            border-bottom: 1px solid #95a5a7;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #4b2c50;
+        }
+
+        .product p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #95a5a7; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordered Products</h1>
+    @foreach (var product in Model)
+    {
+            <div class="product">
+                <p>Product: @product.Name</p>
+                <p>Price: @product.Price</p>
+            </div>
+    }
+</body>
+</html>
+

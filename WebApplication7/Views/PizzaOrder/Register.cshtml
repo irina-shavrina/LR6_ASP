@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Registration</title>
+    <style>
+        body {
+            background-color: #4b2c50; 
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            color: #95a5a7; 
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #95a5a7; 
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            font-size: 1em;
+            display: block;
+            margin-bottom: 10px;
+            color: #95a5a7; 
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            font-size: 1em;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        button[type="submit"] {
+            font-size: 1em;
+            padding: 10px 20px;
+            background-color: #4b2c50; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #95a5a7; 
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+                background-color: #4b2c50; 
+                color: #95a5a7; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal information</h1>
+    <form method="post" action="/PizzaOrder/ConfirmOrder">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
